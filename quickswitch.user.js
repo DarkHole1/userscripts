@@ -6,14 +6,17 @@
 // @match       https://anime-365.ru/catalog/*/*/*
 // @match       https://hentai365.ru/catalog/*/*/*
 // @grant       none
-// @version     0.1.0
+// @version     0.1.2
 // @author      Dark Hole
 // @description Add input in title for quick episode switching. Useful when you need to skip a lot of episodes (e.g. 100 -> 150). For use just change number and press enter or remove focus from field.
 // ==/UserScript==
 
+// When dynamically load page can be unblur + enter.
+var ignoreUnblur = false;
+
 // For quick exit
-void function() {
-  var parsedPath = window.location.pathname.match(/^\/catalog\/.+?-(\d+)\/.+?(\d+)-.+-(\d+)\/[^\/]+-(\d+)$/);
+function createInput() {
+  var parsedPath = window.location.pathname.match(/^\/catalog\/.+?-(\d+)\/.*?(\d+)-.+-(\d+)\/[^\/]+-(\d+)$/);
   if(!parsedPath) return;
   var animeId = parsedPath[1];
   var episode = parsedPath[2];
@@ -45,7 +48,7 @@ void function() {
       var episodes = res.data.episodes;
       for(var i = 0; i < episodes.length; i++) {
         if(episodes[i].episodeInt == ep) {
-          window.location.assign('../' + ep + '-seriya-' + episodes[i].id);
+          dynChangeUrlManually('../' + ep + '-seriya-' + episodes[i].id);
           break;
         }
       };
@@ -59,9 +62,22 @@ void function() {
       gotoEpisode();
     }
   });
-  input.addEventListener('blur', function(e) { gotoEpisode(); });
+  input.addEventListener('blur', function(e) {
+    if(!ignoreUnblur) gotoEpisode();
+  });
 
   heading.innerText = '';
   heading.append(input);
   heading.append(' серия');
-}()
+}
+
+var dynPageLoadSuccess = unsafeWindow.dynPageLoadSuccess;
+unsafeWindow.dynPageLoadSuccess = function() {
+  ignoreUnblur = true;
+  var res = dynPageLoadSuccess.apply(this, arguments);
+  ignoreUnblur = false;
+  createInput();
+  return res;
+}
+
+createInput();
