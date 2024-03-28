@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name        Quick episode switch
 // @namespace   Dark Hole's Scripts
-// @match       https://smotret-anime.com/catalog/*/*/*
-// @match       https://anime365.ru/catalog/*/*/*
-// @match       https://anime-365.ru/catalog/*/*/*
-// @match       https://hentai365.ru/catalog/*/*/*
+// @match       https://smotret-anime.com/*
+// @match       https://anime365.ru/*
+// @match       https://anime-365.ru/*
+// @match       https://hentai365.ru/*
 // @grant       none
-// @version     0.1.2
+// @version     0.1.3
 // @author      Dark Hole
 // @description Add input in title for quick episode switching. Useful when you need to skip a lot of episodes (e.g. 100 -> 150). For use just change number and press enter or remove focus from field.
 // ==/UserScript==
