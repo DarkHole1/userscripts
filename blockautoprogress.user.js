@@ -6,7 +6,7 @@
 // @match       https://smotret-anime.com/translations/embed/*
 // @match       https://hentai365.ru/translations/embed/*
 // @grant       none
-// @version     1.2
+// @version     1.3
 // @author      Dark Hole
 // @description Blocks mark "watched" on anime365, when you watched episode.
 // ==/UserScript==
@@ -16,7 +16,7 @@ window.videojs.plugin("concatenatePlugin", function(options, arg) {
   var trigger = result.trigger;
   result.trigger = function(ev) {
     if(ev == 'watched') return;
-    return trigger.fapply(this, arguments);
+    return trigger.apply(this, arguments);
   };
   return result;
 });
