@@ -6,7 +6,7 @@
 // @match       https://anime-365.ru/*
 // @match       https://hentai365.ru/*
 // @grant       none
-// @version     0.1.0
+// @version     0.1.1
 // @author      Dark Hole
 // @description I guess you know.
 // ==/UserScript==
@@ -36,8 +36,8 @@ function hookEmbed() {
   })
 }
 
-var dynPageLoadSuccess = unsafeWindow.dynPageLoadSuccess;
-unsafeWindow.dynPageLoadSuccess = function() {
+var dynPageLoadSuccess = window.dynPageLoadSuccess;
+window.dynPageLoadSuccess = function() {
   var res = dynPageLoadSuccess.apply(this, arguments);
   hookEmbed();
   return res;
