@@ -12,11 +12,11 @@
 // ==/UserScript==
 
 window.videojs.plugin("concatenatePlugin", function(options, arg) {
-  var result = unsafeWindow.concatenatePlugin.apply(this, arguments);
+  var result = window.concatenatePlugin.apply(this, arguments);
   var trigger = result.trigger;
   result.trigger = function(ev) {
     if(ev == 'watched') return;
-    return trigger.apply(this, arguments);
+    return trigger.fapply(this, arguments);
   };
   return result;
 });
