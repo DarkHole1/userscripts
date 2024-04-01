@@ -6,7 +6,7 @@
 // @match       https://smotret-anime.com/translations/embed/*
 // @match       https://hentai365.ru/translations/embed/*
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      Dark Hole
 // @description Blocks mark "watched" on anime365, when you watched episode.
 // ==/UserScript==
