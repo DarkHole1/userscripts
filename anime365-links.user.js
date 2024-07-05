@@ -3,9 +3,9 @@
 // @namespace   Dark Hole's Scripts
 // @match       https://shikimori.one/*
 // @grant       GM_xmlhttpRequest
-// @version     0.1.0
+// @version     0.1.1
 // @author      Dark Hole
-// @description Add link to Anime365 under picture
+// @description Add link to Anime365 to Shikimori under poster
 // ==/UserScript==
 
 var regexParser = /^https:\/\/shikimori\.(?:one|me)\/animes\/(\d+)[^\/]*$/;
