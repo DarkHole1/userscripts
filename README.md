@@ -10,6 +10,8 @@
 ## Список пользовательских скриптов
 Нажмите на название скрипта, чтобы установить его
 * [anime365-links](https://github.com/DarkHole1/userscripts/raw/main/anime365-links.user.js) - добавляет под постерами на Шики ссылку на тайтл в 365.
+
+  ![](./screenshots/anime365-links.png)
 * [autonext](https://github.com/DarkHole1/userscripts/raw/main/autonext.user.js) - автоматически переключается на следующую серию при достижении конца. Режим полного экрана НЕ сохраняется, следующая серия автоматически НЕ запускается.
 * [blockautoprogress](https://github.com/DarkHole1/userscripts/raw/main/blockautoprogress.user.js) - блокирует отметчание серий просмотренными для самого Anime365.
 * [goto-preview](https://github.com/DarkHole1/userscripts/raw/main/goto-preview.user.js) - добавляет кнопку в режиме создания клипа, для перехода к кадру, которй будет использоваться как превью.
