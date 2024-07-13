@@ -4,13 +4,12 @@
 // @match       https://anime365.ru/*
 // @grant       GM_getResourceURL
 // @noframes
-// @version     0.1.1
+// @version     0.1.2
 // @author      Dark Hole
 // @description Set Anime365 background with Misaka. Taken from official website.
 // @resource    bg https://files.catbox.moe/0l8a1j.jpg
 // ==/UserScript==
 
-console.log(Date.now());
 
 var imgSizeX = 400;
 var imgSizeY = 225;
@@ -27,7 +26,6 @@ canvas.style.background = 'white';
 document.getElementsByClassName('full-background')[0].replaceWith(canvas);
 
 function drawCanvas(img) {
-  console.log(Date.now());
   if (!canvas ||
     !canvas.getContext) {
     return;
@@ -71,7 +69,6 @@ function drawCanvas(img) {
     var y = Math.floor(i / colspan);
     ctx.drawImage(img, 0, imgList[i] * imgSizeY, imgSizeX, imgSizeY, x * imgSizeX, y * imgSizeY, imgSizeX, imgSizeY);
   }
-  console.log(Date.now());
 };
 
 var bgImage = new Image();
