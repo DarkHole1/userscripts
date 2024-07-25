@@ -7,7 +7,7 @@
 // @match       https://hentai365.ru/*
 // @grant       GM_getValue
 // @grant       GM_setValue
-// @version     0.1.0
+// @version     0.1.1
 // @author      Dark Hole
 // @description Hide user's comments on site
 // ==/UserScript==
@@ -130,9 +130,9 @@ function createMainComment(poster, link, ru, romaji, name, date) {
   var text1 = document.createTextNode(" " + ru);
   var line2 = create("h6", "line-2");
   var linkEl2 = create("a");
-  linkEl1.target = "_blank";
-  linkEl1.rel = "nofollow";
-  linkEl1.href = link;
+  linkEl2.target = "_blank";
+  linkEl2.rel = "nofollow";
+  linkEl2.href = link;
   var span2 = create("span", "online-h", "Обсуждение ");
   var text2 = document.createTextNode(" " + romaji);
   var title = create("span", "title", nameAndDate);
