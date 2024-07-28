@@ -27,7 +27,9 @@
     ![](./screenshots/misaka.png)
   
   </details>
-* [quickswitch](https://github.com/DarkHole1/userscripts/raw/main/misaka.user.js) - добавляет вместо номера серии поле ввода, с помощью которого можно перейти к любой серии.
+
+* [position-saver](https://github.com/DarkHole1/userscripts/raw/main/position-saver.user.js) - сохраняет позицию просмотра и восстанавливает её для продолжения просмотра.
+* [quickswitch](https://github.com/DarkHole1/userscripts/raw/main/quickswitch.user.js) - добавляет вместо номера серии поле ввода, с помощью которого можно перейти к любой серии.
 
   ![](./screenshots/quickswitch.png)
 
