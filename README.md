@@ -28,8 +28,8 @@
   
   </details>
 
-* [position-saver](https://github.com/DarkHole1/userscripts/raw/main/position-saver.user.js) - сохраняет позицию просмотра локально и восстанавливает её для продолжения просмотра.
-* [remote-position-saver](https://github.com/DarkHole1/userscripts/raw/main/remote-position-saver.user.js) - то же, что и `position-saver` только сохраняет её на стороннем сервере и работает между браузерами/устройствами.
+* [position-saver](https://github.com/DarkHole1/userscripts/raw/main/position-saver.user.js) - сохраняет позицию просмотра локально и восстанавливает её для продолжения просмотра. Не работает вместе с `remote-position-saver`.
+* [remote-position-saver](https://github.com/DarkHole1/userscripts/raw/main/remote-position-saver.user.js) - то же, что и `position-saver` только сохраняет её на стороннем сервере и работает между браузерами/устройствами. Не работает вместе с `position-saver`.
 * [quickswitch](https://github.com/DarkHole1/userscripts/raw/main/quickswitch.user.js) - добавляет вместо номера серии поле ввода, с помощью которого можно перейти к любой серии.
 
   ![](./screenshots/quickswitch.png)
