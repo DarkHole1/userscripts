@@ -6,7 +6,7 @@
 // @match       https://anime-365.ru/translations/embed/*
 // @match       https://hentai365.ru/translations/embed/*
 // @grant       GM_xmlhttpRequest
-// @version     0.1.0
+// @version     0.1.1
 // @author      Dark Hole
 // @description Saves position in video on server and restores it later
 // ==/UserScript==
@@ -106,14 +106,14 @@ if(!JWT_TOKEN || !jwtValid(JWT_TOKEN)) {
         if("status" in data && data.status == "OK" && "results" in data && "jwtToken" in data.results && typeof data.results.jwtToken == "string") {
           JWT_TOKEN = data.results.jwtToken;
           localStorage.setItem("jwtToken", JWT_TOKEN);
-          authorized = true;
+          AUTHORIZED = true;
         }
         if(ACB) ACB();
       });
     }
   });
 } else {
-  authorized = true;
+  AUTHORIZED = true;
 }
 
 var watched = false;
@@ -144,7 +144,7 @@ unsafeWindow.initVideo = function(embedParams) {
     })
   }
 
-  if(authorized) {
+  if(AUTHORIZED) {
     init();
   } else {
     ACB = init;
