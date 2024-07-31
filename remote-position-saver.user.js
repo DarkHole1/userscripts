@@ -6,7 +6,7 @@
 // @match       https://anime-365.ru/translations/embed/*
 // @match       https://hentai365.ru/translations/embed/*
 // @grant       GM_xmlhttpRequest
-// @version     0.1.1
+// @version     0.1.2
 // @author      Dark Hole
 // @description Saves position in video on server and restores it later
 // ==/UserScript==
@@ -26,48 +26,37 @@ function throttle(time, f) {
 var BASE_URL = "https://anime365-user.maxproplus.ru/api";
 
 function authRequest(accessToken, cb) {
-  GM_xmlhttpRequest({
-    url: BASE_URL + "/login",
-    method: "POST",
-    data: JSON.stringify({ accessToken }),
-    headers: {
-      "Content-Type": "application/json"
-    },
-    responseType: "json",
-    onload: function(data) {
-      cb.call(this, data.response);
-    }
-  })
+  var req = new XMLHttpRequest();
+  req.open("POST", BASE_URL + "/login");
+  req.setRequestHeader("Content-Type", "application/json");
+  req.responseType = "json";
+  req.onload = function(data) {
+    cb.call(this, this.response);
+  }
+  req.send(JSON.stringify({ accessToken }));
 }
 
 function getRequest(jwtToken, translationId, cb) {
-  GM_xmlhttpRequest({
-    url: BASE_URL + "/positions/" + translationId,
-    method: "GET",
-    headers: {
-      "Authorization": "Bearer " + jwtToken
-    },
-    responseType: "json",
-    onload: function(data) {
-      cb.call(this, data.response);
-    }
-  })
+  var req = new XMLHttpRequest();
+  req.open("GET", BASE_URL + "/positions/" + translationId);
+  req.setRequestHeader("Authorization", "Bearer " + jwtToken);
+  req.responseType = "json";
+  req.onload = function(data) {
+    cb.call(this, this.response);
+  }
+  req.send();
 }
 
 function setRequest(jwtToken, translationId, position, cb) {
-  GM_xmlhttpRequest({
-    url: BASE_URL + "/positions",
-    method: "POST",
-    data: JSON.stringify({ translationId: parseInt(translationId), timecode: Math.floor(position) }),
-    headers: {
-      "Authorization": "Bearer " + jwtToken,
-      "Content-Type": "application/json"
-    },
-    responseType: "json",
-    onload: function(data) {
-      cb.call(this, data.response);
-    }
-  })
+  var req = new XMLHttpRequest();
+  req.open("POST", BASE_URL + "/positions");
+  req.setRequestHeader("Authorization", "Bearer " + jwtToken);
+  req.setRequestHeader("Content-Type", "application/json");
+  req.responseType = "json";
+  req.onload = function(data) {
+    cb.call(this, this.response);
+  }
+  req.send(JSON.stringify({ translationId: parseInt(translationId), timecode: Math.floor(position) }));
 }
 
 function getAccessToken(cb) {
