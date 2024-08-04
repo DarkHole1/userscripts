@@ -6,7 +6,7 @@
 // @match       https://anime-365.ru/*
 // @grant       GM_getResourceURL
 // @noframes
-// @version     0.1.2
+// @version     0.1.3
 // @author      Dark Hole
 // @description Set Anime365 background with Misaka. Taken from official website.
 // @resource    bg https://files.catbox.moe/0l8a1j.jpg
