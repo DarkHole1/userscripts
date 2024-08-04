@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name        Block365
 // @namespace   Dark Hole's Scripts
-// @match       https://smotret-anime.com/*
+// @match       https://smotret-anime.net/*
 // @match       https://anime365.ru/*
 // @match       https://anime-365.ru/*
 // @match       https://hentai365.ru/*
 // @grant       GM_getValue
 // @grant       GM_setValue
-// @version     0.1.1
+// @version     0.1.2
 // @author      Dark Hole
 // @description Hide user's comments on site
 // ==/UserScript==
