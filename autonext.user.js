@@ -6,7 +6,7 @@
 // @match       https://anime-365.ru/*
 // @match       https://hentai365.ru/*
 // @grant       none
-// @version     0.1.1
+// @version     0.1.2
 // @author      Dark Hole
 // @description I guess you know.
 // ==/UserScript==
