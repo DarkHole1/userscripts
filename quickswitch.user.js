@@ -6,7 +6,7 @@
 // @match       https://anime-365.ru/*
 // @match       https://hentai365.ru/*
 // @grant       none
-// @version     0.1.4
+// @version     0.1.5
 // @author      Dark Hole
 // @description Add input in title for quick episode switching. Useful when you need to skip a lot of episodes (e.g. 100 -> 150). For use just change number and press enter or remove focus from field.
 // ==/UserScript==
