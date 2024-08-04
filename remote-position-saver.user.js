@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name        Remote Position Saver
 // @namespace   Dark Hole's Scripts
-// @match       https://smotret-anime.com/translations/embed/*
+// @match       https://smotret-anime.net/translations/embed/*
 // @match       https://anime365.ru/translations/embed/*
 // @match       https://anime-365.ru/translations/embed/*
 // @match       https://hentai365.ru/translations/embed/*
 // @grant       GM_xmlhttpRequest
-// @version     0.1.2
+// @version     0.1.3
 // @author      Dark Hole
 // @description Saves position in video on server and restores it later
 // ==/UserScript==
