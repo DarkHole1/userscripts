@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name        Position Saver
 // @namespace   Dark Hole's Scripts
-// @match       https://smotret-anime.com/translations/embed/*
+// @match       https://smotret-anime.net/translations/embed/*
 // @match       https://anime365.ru/translations/embed/*
 // @match       https://anime-365.ru/translations/embed/*
 // @match       https://hentai365.ru/translations/embed/*
 // @grant       none
-// @version     0.1.0
+// @version     0.1.1
 // @author      Dark Hole
 // @description Saves position in video and restores it later
 // ==/UserScript==
