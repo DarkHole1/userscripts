@@ -1,7 +1,9 @@
 // ==UserScript==
 // @name        Random Misaka background
 // @namespace   Dark Hole's Scripts
+// @match       https://smotret-anime.net/*
 // @match       https://anime365.ru/*
+// @match       https://anime-365.ru/*
 // @grant       GM_getResourceURL
 // @noframes
 // @version     0.1.2
