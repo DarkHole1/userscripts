@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Autonext
 // @namespace   Dark Hole's Scripts
-// @match       https://smotret-anime.com/*
+// @match       https://smotret-anime.net/*
 // @match       https://anime365.ru/*
 // @match       https://anime-365.ru/*
 // @match       https://hentai365.ru/*
