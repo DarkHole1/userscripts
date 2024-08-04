@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name        Go to preview
 // @namespace   Dark Hole's Scripts
-// @match       https://smotret-anime.com/translations/embed/*
+// @match       https://smotret-anime.net/translations/embed/*
 // @match       https://anime365.ru/translations/embed/*
 // @match       https://anime-365.ru/translations/embed/*
 // @match       https://hentai365.ru/translations/embed/*
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      Dark Hole
 // @description Adds button during editing video for going to frame that will be preview.
 // ==/UserScript==
