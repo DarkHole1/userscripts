@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name        Block auto progress
 // @namespace   Dark Hole's Scripts
+// @match       https://smotret-anime.org/translations/embed/*
 // @match       https://anime365.ru/translations/embed/*
 // @match       https://anime-365.ru/translations/embed/*
-// @match       https://smotret-anime.net/translations/embed/*
 // @match       https://hentai365.ru/translations/embed/*
+// @match       https://smotret-anime.online/translations/embed/*
+// @match       https://smotret-anime.com/translations/embed/*
 // @grant       none
-// @version     1.3
+// @version     1.4
 // @author      Dark Hole
 // @description Blocks mark "watched" on anime365, when you watched episode.
 // ==/UserScript==

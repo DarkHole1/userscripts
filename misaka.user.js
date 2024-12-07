@@ -1,12 +1,15 @@
 // ==UserScript==
 // @name        Random Misaka background
 // @namespace   Dark Hole's Scripts
-// @match       https://smotret-anime.net/*
+// @match       https://smotret-anime.org/*
 // @match       https://anime365.ru/*
 // @match       https://anime-365.ru/*
+// @match       https://hentai365.ru/*
+// @match       https://smotret-anime.online/*
+// @match       https://smotret-anime.com/*
 // @grant       GM_getResourceURL
 // @noframes
-// @version     0.1.3
+// @version     0.1.4
 // @author      Dark Hole
 // @description Set Anime365 background with Misaka. Taken from official website.
 // @resource    bg https://files.catbox.moe/0l8a1j.jpg
