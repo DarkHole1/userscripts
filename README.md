@@ -33,6 +33,7 @@
 * [quickswitch](https://github.com/DarkHole1/userscripts/raw/main/quickswitch.user.js) - добавляет вместо номера серии поле ввода, с помощью которого можно перейти к любой серии.
 
   ![](./screenshots/quickswitch.png)
+* [reverse-cover](https://github.com/DarkHole1/userscripts/raw/refs/heads/main/reverse-cover.user.css) - меняет обложки и превью местами (при наведении превью, по умолчанию обложка)
 
 ## Известные проблемы
 * quickswitch не работает с другими эпизодами, кроме TV, а также с дробными эпизодами.
