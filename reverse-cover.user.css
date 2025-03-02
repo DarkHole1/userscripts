@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name           Reverse moments cover
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Hides covers on moments on anime365
+@author         Dark Hole
+==/UserStyle== */
+@-moz-document domain("smotret-anime.org"),
+domain("anime365.ru"),
+domain("anime-365.ru"),
+domain("hentai365.ru"),
+domain("h365-art.org") {
+    .m-moment__img .m-moment__poster {
+        top: 0 !important;
+    }
+
+    @media only screen and (min-width: 600px) {
+        .m-moment__img:hover .m-moment__poster {
+            top: 100% !important;
+        }
+    }
+}
