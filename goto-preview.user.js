@@ -7,8 +7,9 @@
 // @match       https://hentai365.ru/translations/embed/*
 // @match       https://smotret-anime.online/translations/embed/*
 // @match       https://smotret-anime.com/translations/embed/*
+// @match       https://smotret-anime.app/translations/embed/*
 // @grant       none
-// @version     1.3
+// @version     1.4
 // @author      Dark Hole
 // @description Adds button during editing video for going to frame that will be preview.
 // ==/UserScript==

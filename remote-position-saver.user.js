@@ -7,8 +7,9 @@
 // @match       https://hentai365.ru/*
 // @match       https://smotret-anime.online/*
 // @match       https://smotret-anime.com/*
+// @match       https://smotret-anime.app/*
 // @grant       GM_xmlhttpRequest
-// @version     0.1.4
+// @version     0.1.5
 // @author      Dark Hole
 // @description Saves position in video on server and restores it later
 // ==/UserScript==

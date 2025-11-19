@@ -7,6 +7,7 @@
 // @match       https://hentai365.ru/*
 // @match       https://smotret-anime.online/*
 // @match       https://smotret-anime.com/*
+// @match       https://smotret-anime.app/*
 // @grant       none
 // @version     0.1.3
 // @author      Dark Hole

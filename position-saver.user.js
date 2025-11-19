@@ -7,8 +7,9 @@
 // @match       https://hentai365.ru/translations/embed/*
 // @match       https://smotret-anime.online/translations/embed/*
 // @match       https://smotret-anime.com/translations/embed/*
+// @match       https://smotret-anime.app/translations/embed/*
 // @grant       none
-// @version     0.1.2
+// @version     0.1.3
 // @author      Dark Hole
 // @description Saves position in video and restores it later
 // ==/UserScript==

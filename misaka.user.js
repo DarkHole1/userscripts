@@ -7,9 +7,10 @@
 // @match       https://hentai365.ru/*
 // @match       https://smotret-anime.online/*
 // @match       https://smotret-anime.com/*
+// @match       https://smotret-anime.app/*
 // @grant       GM_getResourceURL
 // @noframes
-// @version     0.1.4
+// @version     0.1.5
 // @author      Dark Hole
 // @description Set Anime365 background with Misaka. Taken from official website.
 // @resource    bg https://files.catbox.moe/0l8a1j.jpg
