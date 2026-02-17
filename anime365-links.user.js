@@ -6,12 +6,12 @@
 // @match       https://shiki.one/*
 // @connect     smotret-anime.com
 // @grant       GM_xmlhttpRequest
-// @version     0.1.4
+// @version     0.1.5
 // @author      Dark Hole
 // @description Add link to Anime365 to Shikimori under poster
 // ==/UserScript==
 
-var regexParser = /^https:\/\/shikimori\.(?:one|me)\/animes\/(\d+)[^\/]*$/;
+var regexParser = /^https:\/\/(?:shikimori\.(?:one|me)|shiki.one)\/animes\/(\d+)[^\/]*$/;
 
 function tryInsertButton(url) {
   var match = url.match(regexParser);
