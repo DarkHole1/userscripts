@@ -3,9 +3,10 @@
 // @namespace   Dark Hole's Scripts
 // @match       https://shikimori.one/*
 // @match       https://shikimori.me/*
+// @match       https://shiki.one/*
 // @connect     smotret-anime.com
 // @grant       GM_xmlhttpRequest
-// @version     0.1.3
+// @version     0.1.4
 // @author      Dark Hole
 // @description Add link to Anime365 to Shikimori under poster
 // ==/UserScript==
