@@ -1,11 +1,12 @@
 /* ==UserStyle==
 @name           Reverse moments cover
 @namespace      github.com/openstyles/stylus
-@version        1.0.2
+@version        1.0.3
 @description    Hides covers on moments on anime365
 @author         Dark Hole
 ==/UserStyle== */
 @-moz-document domain("smotret-anime.org"),
+domain("smotret-anime.com"),
 domain("anime365.ru"),
 domain("smotret-anime.online"),
 domain("anime-365.ru"),
