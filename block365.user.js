@@ -10,7 +10,7 @@
 // @match       https://smotret-anime.app/*
 // @grant       GM_getValue
 // @grant       GM_setValue
-// @version     0.1.3
+// @version     0.1.4
 // @author      Dark Hole
 // @description Hide user's comments on site
 // ==/UserScript==
