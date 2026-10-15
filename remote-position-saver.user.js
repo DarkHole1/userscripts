@@ -9,7 +9,7 @@
 // @match       https://smotret-anime.com/*
 // @match       https://smotret-anime.app/*
 // @grant       GM_xmlhttpRequest
-// @version     0.1.5
+// @version     0.1.6
 // @author      Dark Hole
 // @description Saves position in video on server and restores it later
 // ==/UserScript==
@@ -26,7 +26,7 @@ function throttle(time, f) {
   }
 }
 
-var BASE_URL = "https://anime365-user.maxproplus.ru/api";
+var BASE_URL = "https://anime365-user.maxproplus.moe/api";
 
 function authRequest(accessToken, cb) {
   var req = new XMLHttpRequest();
